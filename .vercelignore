@@ -1,0 +1,41 @@
+# Игнорировать при деплое на Vercel
+
+# Конфигурационные файлы других серверов
+nginx.conf
+.htaccess
+_htaccess
+
+# Git
+.git
+.gitignore
+
+# Node modules (если есть)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Временные файлы
+*.tmp
+*.log
+*.cache
+
+# Документация и README (опционально)
+README.md
+CHANGELOG.md
+
+# Исходники (если есть)
+src/
+*.psd
+*.ai
+*.sketch
