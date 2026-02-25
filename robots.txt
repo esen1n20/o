@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /consent-personal-data/
+Disallow: /payment/
+Disallow: /*.html$
+
+Sitemap: https://platinovskaya.fit/sitemap.xml

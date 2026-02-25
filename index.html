@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platinovskaya | Фитнес онлайн - тренируйся с профессионалом</title>
+    <meta name="description" content="Онлайн фитнес-тренировки с профессиональным тренером. Персональные программы, курсы по питанию и трансформация тела без жёстких диет.">
+    <meta name="keywords" content="фитнес онлайн, тренировки дома, онлайн тренер, программа питания, похудение, трансформация тела">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://platinovskaya.fit/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Platinovskaya | Фитнес онлайн">
+    <meta property="og:description" content="Онлайн фитнес-тренировки с профессиональным тренером">
+    <meta property="og:image" content="https://platinovskaya.fit/images/og-image.jpg">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="/" class="logo">Platinovskaya</a>
+            <nav class="nav-centered desktop-nav">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <a href="#">Курсы <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-content">
+                            <a href="/courses/yagoditsy-i-press/">Ягодицы пресс</a>
+                            <a href="/courses/idealnoye-telo/">Идеальное тело</a>
+                            <a href="/courses/anti-ofis/">Антиофис</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Услуги <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-content">
+                            <a href="/uslugi/onlayn-konsultatsiya/">Онлайн консультация</a>
+                            <a href="/courses/legkiy-start-dlya-nachinayushchikh/">Лёгкий старт</a>
+                            <a href="/uslugi/personalnye-trenirovki/">Персональные тренировки</a>
+                            <a href="/uslugi/check-up/">Check-Up организма</a>
+                            <a href="/uslugi/soprovozhdenie-po-pitaniyu/">Сопровождение по питанию</a>
+                            <a href="/certificates/">Сертификаты</a>
+                            <a href="/courses/smuzi-detoks/">Смузи детокс</a>
+                        </div>
+                    </li>
+                    <li><a href="/about/">О тренере</a></li>
+                    <li><a href="/contacts/">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-dropdown">
+                   <button class="mobile-dropdown-trigger" aria-expanded="false">
+                       Курсы <span class="mobile-dropdown-arrow">▼</span>
+                   </button>
+                   <div class="mobile-dropdown-content">
+                    <a href="/courses/yagoditsy-i-press/">Ягодицы пресс</a>
+                    <a href="/courses/idealnoye-telo/">Идеальное тело</a>
+                    <a href="/courses/anti-ofis/">Антиофис</a>
+                   </div>
+                </li>
+                <li class="mobile-dropdown">
+                   <button class="mobile-dropdown-trigger" aria-expanded="false">
+                       Услуги <span class="mobile-dropdown-arrow">▼</span>
+                   </button>
+                   <div class="mobile-dropdown-content">
+                    <a href="/uslugi/onlayn-konsultatsiya/">Онлайн консультация</a>
+                    <a href="/courses/legkiy-start-dlya-nachinayushchikh/">Лёгкий старт</a>
+                    <a href="/uslugi/personalnye-trenirovki/">Персональные тренировки</a>
+                    <a href="/uslugi/check-up/">Check-Up организма</a>
+                    <a href="/uslugi/soprovozhdenie-po-pitaniyu/">Сопровождение по питанию</a>
+                    <a href="/certificates/">Сертификаты</a>
+                    <a href="/courses/smuzi-detoks/">Смузи детокс</a>
+                   </div>
+                </li>
+                <li><a href="/about/">О тренере</a></li>
+                <li><a href="/contacts/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-home">
+        <div class="container">
+            <!-- Декоративный фон с абстрактными элементами -->
+            <div class="bg-decor">
+                <img src="/images/decor/teal-wave-top.png" alt="" class="decor teal-wave-top">
+
+                <!-- Голографические элементы для секции отзывов (добавь свои файлы) -->
+                <img src="/images/decor/holo-left.png" alt="" class="decor holo-left">
+                <img src="/images/decor/holo-right.png" alt="" class="decor holo-right">
+                <!-- Добавь остальные голографические PNG по аналогии -->
+            </div>
+
+            <!-- Приветствие -->
+            <section class="hero-section fade-in">
+                <h1 class="main-title">
+                  Фитнес Тренировки <span class="highlight-badge">Онлайн</span>
+                </h1>
+
+                <style>
+                .hero-greeting-wrap {
+                    position: relative;
+                    background: var(--bg-card);
+                    border-radius: 24px;
+                    border: 1px solid rgba(255,255,255,0.06);
+                    overflow: hidden;
+                    box-shadow: 0 8px 48px rgba(0,0,0,0.5);
+                    margin-top: 32px;
+                    display: flex;
+                    align-items: flex-end;
+                }
+                .hero-left {
+                    padding: 48px 48px 40px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+                    flex: 1;
+                    /* не заходить под фото */
+                    padding-right: calc(440px + 32px);
+                    position: relative;
+                    z-index: 1;
+                }
+                .hero-heading {
+                    font-size: clamp(1.65rem, 3.2vw, 2.3rem);
+                    font-weight: 700;
+                    line-height: 1.3;
+                    color: var(--text-primary);
+                    margin: 0 0 18px;
+                }
+                .hero-bullets {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .hero-bullets li {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 10px;
+                    font-size: 1.02rem;
+                    color: var(--text-secondary);
+                    line-height: 1.55;
+                }
+                .hero-bullet-icon {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #FF6B9D, #FFC6D9);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    margin-top: 1px;
+                }
+                .hero-bullet-icon svg {
+                    width: 12px;
+                    height: 12px;
+                    stroke: #1A1A1A;
+                    stroke-width: 3;
+                    fill: none;
+                }
+                .hero-stats-row {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1px;
+                    background: rgba(255,255,255,0.06);
+                    border-radius: 16px;
+                    overflow: hidden;
+                    margin-top: auto;
+                }
+                .hero-stat {
+                    background: var(--bg-secondary);
+                    padding: 20px 14px;
+                    text-align: center;
+                    transition: background 0.25s;
+                }
+                .hero-stat:hover {
+                    background: rgba(255, 107, 157, 0.09);
+                }
+                .hero-stat-num {
+                    font-size: clamp(1.55rem, 2.5vw, 2.1rem);
+                    font-weight: 800;
+                    line-height: 1;
+                    letter-spacing: -0.02em;
+                    background: var(--gradient-pink);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    white-space: nowrap;
+                }
+                .hero-stat-lbl {
+                    font-size: 0.78rem;
+                    color: var(--text-tertiary);
+                    margin-top: 7px;
+                    line-height: 1.4;
+                }
+                /* Фото — абсолютно, прижато к правому краю, по центру по вертикали */
+                .hero-right {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 440px;
+                    z-index: 0;
+                    pointer-events: none;
+                }
+                .hero-right img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                @media (max-width: 960px) {
+                    .hero-greeting-wrap {
+                        flex-direction: column;
+                        align-items: stretch;
+                    }
+                    .hero-left {
+                        padding: 32px 28px 28px;
+                        padding-right: 28px;
+                    }
+                    .hero-right {
+                        position: relative;
+                        width: 100%;
+                        height: 300px;
+                        top: auto;
+                        transform: none;
+                        order: -1;
+                        overflow: hidden;
+                    }
+                    .hero-right img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center 20%;
+                    }
+                }
+                @media (max-width: 480px) {
+                    .hero-right {
+                        height: 240px;
+                    }
+                }
+                @media (max-width: 480px) {
+                    .hero-stats-row {
+                        grid-template-columns: 1fr;
+                        gap: 1px;
+                    }
+                    .hero-stat {
+                        padding: 14px 20px;
+                        display: flex;
+                        align-items: center;
+                        gap: 14px;
+                        text-align: left;
+                    }
+                    .hero-stat-lbl {
+                        margin-top: 0;
+                    }
+                }
+                </style>
+
+                <div class="hero-greeting-wrap">
+                    <div class="hero-left">
+                        <div>
+                            <h2 class="hero-heading">
+                                Привет! 👋<br>
+                                Я — <span class="text-accent">Женя Платиновская.</span><br>
+                                Твой <span class="text-accent">фитнес-тренер</span> и <span class="text-accent">нутрициолог.</span>
+                            </h2>
+                            <ul class="hero-bullets">
+                                <li>
+                                    <span class="hero-bullet-icon"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>
+                                    Готовые курсы — просто «включай и делай»
+                                </li>
+                                <li>
+                                    <span class="hero-bullet-icon"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>
+                                    Личное сопровождение под твои цели
+                                </li>
+                                <li>
+                                    <span class="hero-bullet-icon"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>
+                                    Результат без жёстких диет и запретов
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hero-stats-row">
+                            <div class="hero-stat">
+                                <div class="hero-stat-num">11 лет</div>
+                                <div class="hero-stat-lbl">работы в фитнесе</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-num">10 000+</div>
+                                <div class="hero-stat-lbl">человек прошли курсы</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-num">95%</div>
+                                <div class="hero-stat-lbl">клиентов достигают цели</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <img src="/images/hero/girl-measure.jpg" alt="Женя Платиновская — фитнес-тренер онлайн">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Почему мои программы работают -->
+            <section class="why-section fade-in">
+                <h2 class="section-title">
+                  Почему <span class="text-accent">мои программы</span> работают?
+                </h2>
+                <div class="why-card-modern">
+                    <div class="why-image-container">
+                        <div class="why-image-frame">
+                            <img src="/images/why/IMG_7261.jpg" alt="Результат тренировок" class="why-img-modern">
+                            <div class="why-image-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="why-benefits-wrapper">
+                        <div class="why-benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Без жёстких диет и запретов</h3>
+                                <p class="benefit-description">Гибкий подход к питанию без стресса</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Тренировки дома, без оборудования</h3>
+                                <p class="benefit-description">Занимайся в комфортной обстановке</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Поддержка и мотивация 24/7</h3>
+                                <p class="benefit-description">Всегда на связи для твоих вопросов</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Результат уже через 2 недели</h3>
+                                <p class="benefit-description">Видимые изменения в короткий срок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Курсы -->
+            <section class="courses-section fade-in">
+                <h2 class="section-title">Выбери курс, который нужен тебе</h2>
+                <p class="section-subtitle">Профессиональные программы для достижения твоих целей</p>
+                <div class="courses-grid">
+                    <div class="course-card-big hover-scale">
+                        <img src="/images/courses/ideal-body.png" alt="Идеальное тело">
+                        <div class="course-card-info">
+                            <h3 class="course-card-name">Идеальное тело</h3>
+                            <p class="course-card-price">2 026 ₽</p>
+                            <a href="/courses/idealnoye-telo/" class="course-card-btn">Читать подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-big hover-scale">
+                        <img src="/images/courses/yagoditsy-press.png" alt="Ягодицы + пресс">
+                        <div class="course-card-info">
+                            <h3 class="course-card-name">Ягодицы + пресс</h3>
+                            <p class="course-card-price">2 026 ₽</p>
+                            <a href="/courses/yagoditsy-i-press/" class="course-card-btn">Читать подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-big hover-scale">
+                        <img src="/images/courses/smoothie-detox.png" alt="Смузи детокс">
+                        <div class="course-card-info">
+                            <h3 class="course-card-name">Смузи детокс</h3>
+                            <p class="course-card-price">2 026 ₽</p>
+                            <a href="/courses/smuzi-detoks/" class="course-card-btn">Читать подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-big hover-scale">
+                        <img src="/images/courses/online-consultation.png" alt="Онлайн консультация">
+                        <div class="course-card-info">
+                            <h3 class="course-card-name">Онлайн консультация</h3>
+                            <p class="course-card-price">2 026 ₽</p>
+                            <a href="/uslugi/onlayn-konsultatsiya/" class="course-card-btn">Читать подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-big hover-scale">
+                        <img src="/images/courses/light-start.png" alt="Лёгкий старт">
+                        <div class="course-card-info">
+                            <h3 class="course-card-name">Лёгкий старт</h3>
+                            <p class="course-card-price">2 026 ₽</p>
+                            <a href="/courses/legkiy-start-dlya-nachinayushchikh/" class="course-card-btn">Читать подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-big hover-scale">
+                        <img src="/images/courses/antioffice.png" alt="Антиофис">
+                        <div class="course-card-info">
+                            <h3 class="course-card-name">Антиофис</h3>
+                            <p class="course-card-price">2 026 ₽</p>
+                            <a href="/courses/anti-ofis/" class="course-card-btn">Читать подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-big hover-scale">
+                        <img src="/images/courses/personal-trainings.png" alt="Персональные тренировки">
+                        <div class="course-card-info">
+                            <h3 class="course-card-name">Персональные тренировки</h3>
+                            <p class="course-card-price">2 026 ₽</p>
+                            <a href="/uslugi/personalnye-trenirovki/" class="course-card-btn">Читать подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-big hover-scale">
+                        <img src="/images/courses/check-up.png" alt="Check-Up организма">
+                        <div class="course-card-info">
+                            <h3 class="course-card-name">Check-Up организма</h3>
+                            <p class="course-card-price">2 026 ₽</p>
+                            <a href="/uslugi/check-up/" class="course-card-btn">Читать подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-big hover-scale">
+                        <img src="/images/courses/nutrition-accompaniment.png" alt="Сопровождение по питанию">
+                        <div class="course-card-info">
+                            <h3 class="course-card-name">Сопровождение по питанию</h3>
+                            <p class="course-card-price">2 026 ₽</p>
+                            <a href="/uslugi/soprovozhdenie-po-pitaniyu/" class="course-card-btn">Читать подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Подарки -->
+            <!-- Подарки -->
+            <section class="gifts-section fade-in">
+              <div class="gifts-container">
+                <div class="gifts-text">
+                  <h2 class="gifts-title">Любой наш курс можно <span class="accent-gradient">приобрести в подарок</span></h2>
+                  <p class="gifts-subtitle">Выбери курс, заполни данные получателя — и мы отправим красивый подарочный сертификат на email</p>
+                  <a href="payment.html?course=light-start" class="btn-primary">Купить сертификат</a>
+                </div>
+                <div class="gifts-image">
+                  <img src="/images/gifts/gift-box.jpg" alt="Подарочный сертификат">
+                </div>
+              </div>
+            </section>
+
+            <!-- Отзывы -->
+            <section class="reviews-section fade-in">
+              <h2 class="section-title">Отзывы</h2>
+  
+              <div class="reviews-container">
+                <div class="review-bubble">
+                  <img src="/images/hero/girl2.jpg" alt="Женя" class="review-avatar">
+                  <div class="review-content">
+                    <strong>Женя</strong>
+                    <p>Спасибо огромное за марафон!!! Эти два марафона просто 🔥🔥🔥 и я начала чувствовать себя счастливее!!! За два марафона -9 кг!!! Это просто супер!!! Я благодарна вам за все!!! И я не остановлюсь и буду дальше идти к своей цели!!! 💪💪💪</p>
+                  </div>
+                  <span class="review-emoji">😊</span>
+                </div>
+
+                <div class="review-bubble">
+                  <img src="/images/hero/girl1.jpg" alt="Анастасия" class="review-avatar">
+                  <div class="review-content">
+                    <strong>Анастасия</strong>
+                    <p>Женя, может быть я повторюсь, но я безумно счастлива, что я нашла вас ❤️❤️❤️ и только благодаря вам я достигла таких результатов. И иду дальше к своей цели 💪 Пусть сейчас не так быстро... но!!! Блииин... результат офигенный!!! И я заряжена так, чтобы он был еще еще лучше 🤗🤗🤗</p>
+                  </div>
+                  <span class="review-emoji">🥰</span>
+                </div>
+
+                <div class="review-bubble">
+                  <img src="/images/hero/girl3.jpg" alt="Ксения" class="review-avatar">
+                  <div class="review-content">
+                    <strong>Ксения</strong>
+                    <p>Добрый день! Все отлично 😁 Чувствую себя прекрасно 😁 радует результат, и окружающие это замечают... 😘😘😘 недавно думала снять видео про джинсы, но что не дошло до этого 😱 те джинсы не ношу уже, потому что висят 😊 постараюсь завтра сделать все отчеты.</p>
+                  </div>
+                  <span class="review-emoji">😎</span>
+                </div>
+              </div>
+            </section>
+        </div>
+    </main>
+
+<!-- FAQ Section -->
+<section class="faq-section fade-in">
+    <div class="faq-container">
+        <div class="faq-header">
+            <h2 class="section-title">
+                Ответы на <span class="text-accent">частые вопросы</span>
+            </h2>
+        </div>
+
+        <div class="faq-content">
+            <!-- Левая колонка с контактной информацией -->
+            <div class="faq-contact-card">
+                <div class="contact-card-header">
+                    <h3>Не нашли ответ<br>на свой вопрос?</h3>
+                </div>
+                <p class="contact-card-subtitle">Напишите нам в удобный мессенджер</p>
+                
+                <a href="https://t.me/platinovskaya" class="telegram-button" target="_blank" rel="noopener">
+                    <svg class="telegram-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.693-1.653-1.124-2.678-1.8-1.185-.781-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.008-1.252-.241-1.865-.44-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.121.099.155.232.171.326.016.093.036.307.02.473z"/>
+                    </svg>
+                </a>
+                
+                <p class="contact-hours">Мы на связи каждый день с 10:00 до 20:00</p>
+            </div>
+
+            <!-- Правая колонка с вопросами -->
+            <div class="faq-questions-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">На какой платформе будут проходить тренировки?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Тренировки проходят в удобном формате онлайн через наше мобильное приложение или личный кабинет на сайте. Вы получаете доступ ко всем видео-урокам, программам питания и можете заниматься в любое удобное время.</p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Когда я получу доступ к тренировкам?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Доступ к курсу открывается сразу после оплаты. Вы получите письмо на email с инструкциями по входу в личный кабинет и можете начать заниматься в тот же день.</p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Куда писать в случае технических проблем?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>При возникновении технических вопросов пишите нам в Telegram @platinovskaya или на email. Наша служба поддержки отвечает в течение 2-4 часов в рабочее время.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Есть ли индивидуальные тренировки / подбор тренировок?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, у нас есть программа персональных тренировок с индивидуальным подходом. Тренер составит программу специально под ваши цели, уровень подготовки и особенности здоровья.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Сколько длятся тренировки и какое количество их в курсе?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Продолжительность тренировок зависит от выбранного курса. Обычно тренировка длится 30-60 минут. В курсе от 20 до 90 тренировок, рассчитанных на 4-12 недель.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Что мне потребуется для тренировок?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Для большинства тренировок нужен только коврик. Некоторые программы используют дополнительное оборудование: гантели, фитнес-резинки, но это опционально — есть варианты упражнений без инвентаря.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Как долго для меня будут доступны материалы курса?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Доступ к материалам курса остается у вас навсегда! Вы сможете пересматривать тренировки и возвращаться к программе в любое время.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Какой формат у видеотренировок?</span>
+                        <span class="faq-icon"> </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Все тренировки записаны в HD качестве. Тренер показывает и комментирует каждое упражнение, даёт подсказки по технике и мотивирует на протяжении всей тренировки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">Platinovskaya</div>
+                    <div class="footer-tagline"></div>
+                    <p class="footer-description">
+                        Онлайн тренировки в твоем телефоне.<br>
+                        Фитнес, йога, здоровье и питание.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/platinovskaya" class="social-link" target="_blank" rel="noopener">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                                <path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="https://t.me/platinovskaya" class="social-link" target="_blank" rel="noopener">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.693-1.653-1.124-2.678-1.8-1.185-.781-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.008-1.252-.241-1.865-.44-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.121.099.155.232.171.326.016.093.036.307.02.473z"/>
+                            </svg>
+                            Telegram
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        <br>
+                            platinovskaya@gmail.com</a> - для вопросов по курсам и сотрудничеству<br>
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">КУРСЫ</h4>
+                    <div class="footer-links">
+                        <a href="/courses/idealnoye-telo/" class="footer-link">Идеальное тело</a>
+                        <a href="/courses/yagoditsy-i-press/" class="footer-link">Ягодицы + пресс</a>
+                        <a href="/courses/anti-ofis/" class="footer-link">Антиофис</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">УСЛУГИ</h4>
+                    <div class="footer-links">
+                        <a href="/uslugi/onlayn-konsultatsiya/" class="footer-link">Онлайн консультация</a>
+                        <a href="/uslugi/soprovozhdenie-po-pitaniyu/" class="footer-link">Сопровождение по питанию</a>
+                        <a href="/uslugi/personalnye-trenirovki/" class="footer-link">Персональные тренировки</a>
+                        <a href="/courses/legkiy-start-dlya-nachinayushchikh/" class="footer-link">Лёгкий старт</a>
+                        <a href="/courses/smoothie-detox" class="footer-link">Смузи детокс</a>
+                        <a href="/uslugi/check-up" class="footer-link">Check Up организма</a>
+                        <a href="/certificates" class="footer-link">Сертификаты</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">ДЛЯ КЛИЕНТА</h4>
+                    <div class="footer-links">
+                        <a href="/about/" class="footer-link">О тренере</a>
+                        <a href="/contacts/" class="footer-link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="/privacy-policy/">Политика конфиденциальности</a>
+                    <a href="/personal-data-policy/">Обработка персональных данных</a>
+                    <a href="/terms-of-service/">Пользовательское соглашение</a>
+                    <a href="/consent-personal-data/">Согласие на обработку ПД</a>
+                </div>
+                
+                <div class="footer-copyright">
+                    <span>© 2026 Platinovskaya.fit</span>
+  
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+{
+  "version": 2,
+  "public": true,
+  "trailingSlash": true,
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(jpg|jpeg|png|gif|webp|svg|ico))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(css|js))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(woff|woff2|ttf|otf))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(mp4|webm))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/www.platinovskaya.fit/(.*)",
+      "destination": "https://platinovskaya.fit/$1",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)\\.html",
+      "destination": "/$1/",
+      "permanent": true
+    },
+    {
+      "source": "/light-start.html",
+      "destination": "/courses/legkiy-start-dlya-nachinayushchikh/",
+      "permanent": true
+    },
+    {
+      "source": "/online-consultation.html",
+      "destination": "/uslugi/onlayn-konsultatsiya/",
+      "permanent": true
+    },
+    {
+      "source": "/personal-trainings.html",
+      "destination": "/uslugi/personalnye-trenirovki/",
+      "permanent": true
+    },
+    {
+      "source": "/yagoditsy-press.html",
+      "destination": "/courses/yagoditsy-i-press/",
+      "permanent": true
+    },
+    {
+      "source": "/smoothie-detox.html",
+      "destination": "/courses/smuzi-detoks/",
+      "permanent": true
+    },
+    {
+      "source": "/check-up.html",
+      "destination": "/uslugi/check-up/",
+      "permanent": true
+    },
+    {
+      "source": "/ideal-body.html",
+      "destination": "/courses/idealnoye-telo/",
+      "permanent": true
+    },
+    {
+      "source": "/antioffice.html",
+      "destination": "/courses/anti-ofis/",
+      "permanent": true
+    },
+    {
+      "source": "/nutrition-accompaniment.html",
+      "destination": "/uslugi/soprovozhdenie-po-pitaniyu/",
+      "permanent": true
+    },
+    {
+      "source": "/webinars.html",
+      "destination": "/courses/vebinary/",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/contacts.html",
+      "destination": "/contacts/",
+      "permanent": true
+    },
+    {
+      "source": "/cases.html",
+      "destination": "/cases/",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/useful.html",
+      "destination": "/useful/",
+      "permanent": true
+    },
+    {
+      "source": "/certificates.html",
+      "destination": "/certificates/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy.html",
+      "destination": "/privacy-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/personal-data-policy.html",
+      "destination": "/personal-data-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/terms-of-service.html",
+      "destination": "/terms-of-service/",
+      "permanent": true
+    },
+    {
+      "source": "/consent-personal-data.html",
+      "destination": "/consent-personal-data/",
+      "permanent": true
+    },
+    {
+      "source": "/payment.html",
+      "destination": "/payment/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/onlayn-konsultatsiya-fitnes/:path*",
+      "destination": "/uslugi/onlayn-konsultatsiya/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/personalnye-trenirovki/:path*",
+      "destination": "/uslugi/personalnye-trenirovki/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/check-up-organizma/:path*",
+      "destination": "/uslugi/check-up/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/soprovozhdenie-po-pitaniyu/:path*",
+      "destination": "/uslugi/soprovozhdenie-po-pitaniyu/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/courses/legkiy-start-dlya-nachinayushchikh/:path*",
+      "destination": "/light-start.html"
+    },
+    {
+      "source": "/courses/yagoditsy-i-press/:path*",
+      "destination": "/yagoditsy-press.html"
+    },
+    {
+      "source": "/courses/smuzi-detoks/:path*",
+      "destination": "/smoothie-detox.html"
+    },
+    {
+      "source": "/courses/idealnoye-telo/:path*",
+      "destination": "/ideal-body.html"
+    },
+    {
+      "source": "/courses/anti-ofis/:path*",
+      "destination": "/antioffice.html"
+    },
+    {
+      "source": "/courses/vebinary/:path*",
+      "destination": "/webinars.html"
+    },
+    {
+      "source": "/uslugi/onlayn-konsultatsiya/:path*",
+      "destination": "/online-consultation.html"
+    },
+    {
+      "source": "/uslugi/personalnye-trenirovki/:path*",
+      "destination": "/personal-trainings.html"
+    },
+    {
+      "source": "/uslugi/check-up/:path*",
+      "destination": "/check-up.html"
+    },
+    {
+      "source": "/uslugi/soprovozhdenie-po-pitaniyu/:path*",
+      "destination": "/nutrition-accompaniment.html"
+    },
+    {
+      "source": "/cases/:path*",
+      "destination": "/cases.html"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/blog.html"
+    },
+    {
+      "source": "/about/:path*",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/contacts/:path*",
+      "destination": "/contacts.html"
+    },
+    {
+      "source": "/useful/:path*",
+      "destination": "/useful.html"
+    },
+    {
+      "source": "/certificates/:path*",
+      "destination": "/certificates.html"
+    },
+    {
+      "source": "/payment/:path*",
+      "destination": "/payment.html"
+    },
+    {
+      "source": "/consent-personal-data/:path*",
+      "destination": "/consent-personal-data.html"
+    },
+    {
+      "source": "/privacy-policy/:path*",
+      "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/personal-data-policy/:path*",
+      "destination": "/personal-data-policy.html"
+    },
+    {
+      "source": "/terms-of-service/:path*",
+      "destination": "/terms-of-service.html"
+    }
+  ]
+}
